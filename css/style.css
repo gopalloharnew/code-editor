@@ -12,8 +12,10 @@
   --font-primary: "Fira Sans", sans-serif;
 
   /* colors */
+  color-scheme: dark;
   --bg-400: hsl(225, 8%, 12%);
   --bg-200: hsl(0, 0%, 5%);
+  --bg-hover: hsla(220, 50%, 70%, 0.25);
   --text-400: hsl(0, 0%, 100%);
   --accent-400: hsl(200, 100%, 50%);
 
@@ -23,6 +25,15 @@
   --border-color-400: hsl(0, 0%, 18%);
   --border-100: var(--border-width-100) var(--border-style)
     var(--border-color-400);
+
+  /* dimensions */
+  --nav-height: calc(3.5rem + 1px);
+  --spacing-100: 0.25rem;
+  --spacing-200: 0.5rem;
+  --spacing-400: 1rem;
+  --radius-200: 0.25rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.5rem;
 }
 
 body {
@@ -33,13 +44,12 @@ body {
   height: 100svh;
 }
 
-#app {
+.app {
   width: 100%;
   height: 100%;
 }
 
-.nav {
-  background-color: var(--bg-200);
-  height: calc(3.5rem + 1px);
-  border-bottom: var(--border-100);
+.main {
+  width: 100%;
+  height: calc(100% - var(--nav-height));
 }

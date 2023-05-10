@@ -1,0 +1,43 @@
+.nav {
+  background-color: var(--bg-200);
+  height: var(--nav-height);
+  border-bottom: var(--border-100);
+  padding: 0rem var(--spacing-400);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  font-size: var(--font-size-500);
+}
+
+.brand-icon {
+  -webkit-mask-image: url(/icons/brand-icon.svg);
+  mask-image: url(/icons/brand-icon.svg);
+  --icon-size: 2rem;
+  --icon-color: var(--text-400);
+}
+
+.nav-action-button-wraper {
+  display: flex;
+  align-items: center;
+}
+
+/* full-screen-button */
+
+.full-screen-icon {
+  -webkit-mask-image: url(/icons/open-full-screen.svg);
+  mask-image: url(/icons/open-full-screen.svg);
+  --icon-color: var(--text-400);
+  --icon-size: var(--font-size-600);
+  display: block;
+}
+
+[data-full-screen] .full-screen-icon {
+  -webkit-mask-image: url(/icons/close-full-screen.svg);
+  mask-image: url(/icons/close-full-screen.svg);
+}

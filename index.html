@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/utils.css" />
+    <!-- utils should be on top so that overwriting styles is easy  -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,14 +18,33 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="icon.svg" type="image/svg" />
+
+    <!-- script -->
     <script src="js/script.js" type="module"></script>
     <title>Code Editor</title>
   </head>
   <body>
-    <div id="app">
-      <div class="nav"></div>
-      <div class="code-side"></div>
-      <div class="result-side"></div>
+    <div class="app">
+      <!-- nav -->
+      <div class="nav">
+        <div class="branding">
+          <span class="brand-icon icon"></span>
+          <span class="brand-name">Code Editor</span>
+        </div>
+        <div class="nav-action-button-wraper">
+          <button class="full-screen-button btn-reset">
+            <span class="full-screen-icon icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- main -->
+      <main class="main">
+        <!-- code -->
+        <div class="code-side"></div>
+        <!-- result -->
+        <div class="result-side"></div>
+      </main>
     </div>
   </body>
 </html>

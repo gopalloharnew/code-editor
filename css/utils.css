@@ -1,0 +1,34 @@
+/* icon */
+.icon {
+  /* set -webkit-mask-image, -mask-image, --icon-color and --icon-size */
+  background-color: var(--icon-color);
+  display: inline-block;
+  height: var(--icon-size);
+  width: var(--icon-size);
+
+  /* mask */
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+/* button */
+.btn-reset {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-200);
+  padding: 0.25rem;
+}
+
+.btn-reset:hover {
+  background-color: var(--bg-hover);
+}
+
+.btn-reset:focus-visible {
+  border-color: var(--accent-400);
+}
