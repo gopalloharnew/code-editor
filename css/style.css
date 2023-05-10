@@ -7,10 +7,39 @@
 }
 
 :root {
+  /* fonts */
   --font-code: "Fira Code", monospace;
   --font-primary: "Fira Sans", sans-serif;
+
+  /* colors */
+  --bg-400: hsl(225, 8%, 12%);
+  --bg-200: hsl(0, 0%, 5%);
+  --text-400: hsl(0, 0%, 100%);
+  --accent-400: hsl(200, 100%, 50%);
+
+  /* borders */
+  --border-width-100: 1px;
+  --border-style: solid;
+  --border-color-400: hsl(0, 0%, 18%);
+  --border-100: var(--border-width-100) var(--border-style)
+    var(--border-color-400);
 }
 
 body {
   font-family: var(--font-primary);
+  background-color: var(--bg-400);
+  color: var(--text-400);
+  width: 100%;
+  height: 100svh;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  background-color: var(--bg-200);
+  height: calc(3.5rem + 1px);
+  border-bottom: var(--border-100);
 }
