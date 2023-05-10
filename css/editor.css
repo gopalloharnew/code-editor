@@ -1,0 +1,53 @@
+.editor-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* editor navbar */
+.editor-nav-bar {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--bg-200);
+  display: flex;
+  align-items: end;
+  padding: 0 var(--spacing-400);
+  flex-shrink: 0;
+}
+
+/* language-tab-button */
+.language-tab-button-wraper {
+  display: flex;
+  list-style: none;
+}
+
+.language-tab-button {
+  border-radius: var(--radius-200) var(--radius-200) 0 0;
+  padding-bottom: var(--spacing-200);
+  width: 6ch;
+}
+
+[data-current-language="html"] [data-language-tab-button="html"] {
+  background-color: var(--bg-400);
+}
+
+[data-current-language="css"] [data-language-tab-button="css"] {
+  background-color: var(--bg-400);
+}
+
+[data-current-language="js"] [data-language-tab-button="js"] {
+  background-color: var(--bg-400);
+}
+
+/* editor-textarea */
+.editor-textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  font: inherit;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  padding: var(--spacing-400);
+  font-family: var(--font-code);
+}

@@ -23,6 +23,7 @@
   border: 2px solid transparent;
   border-radius: var(--radius-200);
   padding: 0.25rem;
+  font: inherit;
 }
 
 .btn-reset:hover {
