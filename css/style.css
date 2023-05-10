@@ -5,3 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --font-code: "Fira Code", monospace;
+  --font-primary: "Fira Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
