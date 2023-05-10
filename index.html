@@ -26,7 +26,11 @@
     <title>Code Editor</title>
   </head>
   <body>
-    <div class="app" data-editor-configuration="vertical">
+    <div
+      class="app"
+      data-editor-configuration="vertical"
+      data-current-editor-language="html"
+    >
       <!-- nav -->
       <div class="nav">
         <div class="branding">
@@ -43,7 +47,7 @@
       <!-- main -->
       <main class="main">
         <!-- code -->
-        <div class="editor-container" data-current-language="html">
+        <div class="editor-container">
           <div class="editor-nav-bar">
             <ul class="language-tab-button-wraper">
               <li>
@@ -87,7 +91,17 @@
           ></textarea>
         </div>
         <!-- result -->
-        <div class="result-container"></div>
+        <div class="result-container">
+          <iframe
+            srcdoc=""
+            title="output"
+            sandbox="allow-scripts"
+            frameborder="0"
+            width="100%"
+            height="100%"
+            class="result-iframe"
+          ></iframe>
+        </div>
       </main>
     </div>
   </body>

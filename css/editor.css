@@ -26,15 +26,15 @@
   width: 6ch;
 }
 
-[data-current-language="html"] [data-language-tab-button="html"] {
+[data-current-editor-language="html"] [data-language-tab-button="html"] {
   background-color: var(--bg-400);
 }
 
-[data-current-language="css"] [data-language-tab-button="css"] {
+[data-current-editor-language="css"] [data-language-tab-button="css"] {
   background-color: var(--bg-400);
 }
 
-[data-current-language="js"] [data-language-tab-button="js"] {
+[data-current-editor-language="js"] [data-language-tab-button="js"] {
   background-color: var(--bg-400);
 }
 
