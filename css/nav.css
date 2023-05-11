@@ -16,8 +16,8 @@
 }
 
 .brand-icon {
-  -webkit-mask-image: url(/icons/brand-icon.svg);
-  mask-image: url(/icons/brand-icon.svg);
+  -webkit-mask-image: url(../icons/brand-icon.svg);
+  mask-image: url(../icons/brand-icon.svg);
   --icon-size: 2rem;
   --icon-color: var(--text-400);
 }
@@ -30,14 +30,14 @@
 /* full-screen-button */
 
 .full-screen-icon {
-  -webkit-mask-image: url(/icons/open-full-screen.svg);
-  mask-image: url(/icons/open-full-screen.svg);
+  -webkit-mask-image: url(../icons/open-full-screen.svg);
+  mask-image: url(../icons/open-full-screen.svg);
   --icon-color: var(--text-400);
   --icon-size: var(--font-size-600);
   display: block;
 }
 
 [data-full-screen] .full-screen-icon {
-  -webkit-mask-image: url(/icons/close-full-screen.svg);
-  mask-image: url(/icons/close-full-screen.svg);
+  -webkit-mask-image: url(../icons/close-full-screen.svg);
+  mask-image: url(../icons/close-full-screen.svg);
 }

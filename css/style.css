@@ -18,6 +18,8 @@
   --bg-hover: hsla(220, 50%, 70%, 0.25);
   --text-400: hsl(0, 0%, 100%);
   --accent-400: hsl(200, 100%, 50%);
+  --scrollbar-color: hsl(225, 5%, 30%);
+  --scrollbar-color-hover: hsl(225, 5%, 50%);
 
   /* borders */
   --border-width-100: 1px;
@@ -48,4 +50,33 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  background-clip: content-box;
+  border: 4px solid transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-color-hover);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-color);
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 50%;
 }
