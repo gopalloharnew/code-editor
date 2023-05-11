@@ -59,6 +59,11 @@ function switchLanguage(language) {
   editorTextarea.focus();
 }
 
+function autoResize() {
+  editorTextarea.style.height = "auto";
+  editorTextarea.style.height = editorTextarea.scrollHeight + "px";
+}
+
 languageTabButtons.forEach((languageTabButton) => {
   languageTabButton.addEventListener("click", () => {
     switchLanguage(languageTabButton.dataset.languageTabButton);
@@ -79,9 +84,10 @@ if (localStorage.getItem(LOCAL_STORAGE_KEY)) {
   };
 }
 
-editorTextarea.addEventListener("keyup", (e) => {
+editorTextarea.addEventListener("input", (e) => {
   clearTimeout(editorTimeout);
   editorTimeout = setTimeout(saveCode, SAVE_DELAY);
+  autoResize();
 });
 
 renderCode();
@@ -97,3 +103,5 @@ if (window.innerWidth < window.innerHeight) {
 } else {
   setEditorConfiguration("horizontal");
 }
+
+autoResize();
